@@ -113,13 +113,14 @@ input:hover {
 
 input:focus {
     background-color: hsl(131, 52%, 96%);
+    box-shadow: 
 }
 
 input:valid {
     background-color: hsl(131, 53%, 84%);
 }
 
-input:invalid {
+input:not(:placeholder-shown):invalid {
     background-color: hsl(0, 49%, 83%);
 }
 

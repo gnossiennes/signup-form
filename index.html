@@ -28,36 +28,70 @@
             <fieldset class="name">
                 <div class="form-row">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                    <input required type="text" 
+                    id="first-name" 
+                    name="first-name" 
+                    autocomplete ="first-name"
+                    minlength="1"
+                    placeholder="Jesse"
+                    autofocus >
                 </div>
 
                 <div class="form-row">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" required>
+                    <input 
+                    required
+                    type="text" 
+                    id="last-name" 
+                    name="last-name" 
+                    autocomplete="last-name"
+                    minlength="1"
+                    placeholder="Doe"
+                    >
                 </div>
             </fieldset>
 
             <fieldset class="contact-methods">
                 <div class="form-row">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required>
+                    <input required
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    minlength="2"
+                    placeholder="example@domain.com"
+                    >
                 </div>
 
                 <div class="form-row">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input required
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    minlength="2"
+                    placeholder=" ">
                 </div>
             </fieldset>
 
             <fieldset class="password">
                 <div class="form-row">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
+                    <input required 
+                    type="password" 
+                    id="password" 
+                    name="password"
+                    minlength="8"
+                    placeholder=" " >
                 </div>
 
                 <div class="form-row">
                     <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="password-confirm" name="password-confirm" required>
+                    <input required 
+                    type="password" id="password-confirm" 
+                    name="password-confirm"
+                    minlength="8"
+                    placeholder=" " >
                 </div>
             </fieldset>
 
